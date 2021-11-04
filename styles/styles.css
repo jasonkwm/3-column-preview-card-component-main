@@ -83,6 +83,16 @@ font-family: 'Lexend Deca', sans-serif;
 /* Color */
 /* p tag */
 /* background, headings, buttons */
+.sr-only {
+  position: absolute;
+  top: auto;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
 body {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -123,6 +133,7 @@ main {
 .card-container {
   overflow: hidden;
   border-radius: 10px;
+  margin: auto;
 }
 
 .card-container a {
