@@ -16,6 +16,16 @@ $v-dark-cyan: hsl(179, 100%, 13%);
 $trans-white: hsla(0, 0%, 100%, 0.75); /* p tag */
 $v-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
 
+.sr-only {
+  position: absolute;
+  top: auto;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
 body {
   background-color: $v-light-gray;
   display: flex;
