@@ -1,0 +1,95 @@
+@import "reset";
+
+@function rem($size) {
+  @return ($size / 16px) * 1rem;
+}
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+/* Color */
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$v-dark-cyan: hsl(179, 100%, 13%);
+
+$trans-white: hsla(0, 0%, 100%, 0.75); /* p tag */
+$v-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+body {
+  background-color: $v-light-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: rem(15px);
+  font-family: "Lexend Deca", sans-serif;
+  color: $v-light-gray;
+}
+
+h2 {
+  font-size: rem(36px);
+  font-family: "Big Shoulders Display", cursive;
+  margin: 20px 0;
+}
+
+p {
+  color: $trans-white;
+  line-height: 1.7;
+  max-width: 25ch;
+  margin-bottom: auto;
+}
+
+main {
+  padding: 40px;
+  max-width: 860px;
+}
+
+.card-container {
+  overflow: hidden;
+  border-radius: 10px;
+  a {
+    margin-top: rem(25px);
+    padding: rem(12px) rem(26px);
+    background-color: $v-light-gray;
+    text-decoration: none;
+    border-radius: rem(40px);
+  }
+}
+
+.card-component {
+  padding: rem(40px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: rem(300px);
+  &:nth-child(1) {
+    background-color: $bright-orange;
+    a {
+      color: $bright-orange;
+    }
+  }
+  &:nth-child(2) {
+    background-color: $dark-cyan;
+    a {
+      color: $dark-cyan;
+    }
+  }
+  &:nth-child(3) {
+    background-color: $v-dark-cyan;
+
+    a {
+      color: $v-dark-cyan;
+    }
+  }
+}
+
+.attribution {
+  font-size: rem(12px);
+  text-align: center;
+  color: black;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+@import "desktop";
