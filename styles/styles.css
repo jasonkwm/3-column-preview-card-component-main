@@ -142,6 +142,9 @@ main {
   background-color: #f2f2f2;
   text-decoration: none;
   border-radius: 2.5rem;
+  border: solid 2px transparent;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
 }
 
 .card-component {
@@ -167,6 +170,12 @@ main {
   color: #e38826;
 }
 
+.card-component:nth-child(1) a:hover {
+  border: solid 2px #f2f2f2;
+  background-color: #e38826;
+  color: #f2f2f2;
+}
+
 .card-component:nth-child(2) {
   background-color: #006970;
 }
@@ -175,12 +184,24 @@ main {
   color: #006970;
 }
 
+.card-component:nth-child(2) a:hover {
+  border: solid 2px #f2f2f2;
+  background-color: #006970;
+  color: #f2f2f2;
+}
+
 .card-component:nth-child(3) {
   background-color: #004241;
 }
 
 .card-component:nth-child(3) a {
   color: #004241;
+}
+
+.card-component:nth-child(3) a:hover {
+  border: solid 2px #f2f2f2;
+  background-color: #004241;
+  color: #f2f2f2;
 }
 
 .attribution {

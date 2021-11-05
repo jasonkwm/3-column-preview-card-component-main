@@ -65,6 +65,8 @@ main {
     background-color: $v-light-gray;
     text-decoration: none;
     border-radius: rem(40px);
+    border: solid 2px transparent;
+    transition: all 0.3s ease !important;
   }
 }
 
@@ -78,12 +80,22 @@ main {
     background-color: $bright-orange;
     a {
       color: $bright-orange;
+      &:hover {
+        border: solid 2px $v-light-gray;
+        background-color: $bright-orange;
+        color: $v-light-gray;
+      }
     }
   }
   &:nth-child(2) {
     background-color: $dark-cyan;
     a {
       color: $dark-cyan;
+      &:hover {
+        border: solid 2px $v-light-gray;
+        background-color: $dark-cyan;
+        color: $v-light-gray;
+      }
     }
   }
   &:nth-child(3) {
@@ -91,6 +103,11 @@ main {
 
     a {
       color: $v-dark-cyan;
+      &:hover {
+        border: solid 2px $v-light-gray;
+        background-color: $v-dark-cyan;
+        color: $v-light-gray;
+      }
     }
   }
 }
