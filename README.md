@@ -15,3 +15,10 @@ I've decided to complete this mini-project using HTML & SCSS.
 
 - Solution URL: [Code on Github](https://github.com/jasonkwm/3-column-preview-card-component-main)
 - Live Site URL: [Live site on vercel](https://3-column-preview-card-component-main-sand.vercel.app/)
+
+## My Process
+
+### Build with
+- HTML 
+- SASS
+- No Figma/Sketch files
